@@ -99,7 +99,7 @@ namespace Battleships.Game
             {
                 if (PlayingFieldController.Save())
                 {
-                    Form.Text = "Schiffe versenken - " + PlayingFieldController.FileName.Split('\\').Last();
+                    Form.Text = "Battleships - " + PlayingFieldController.FileName.Split('\\').Last();
                     MessageBox.Show("Playing field successfully saved!", "Save", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
@@ -107,7 +107,7 @@ namespace Battleships.Game
                     if (saveDialog.ShowDialog() == DialogResult.OK)
                         if (PlayingFieldController.SaveAs(saveDialog.FileName))
                         {
-                            Form.Text = "Schiffe versenken - " + PlayingFieldController.FileName.Split('\\').Last();
+                            Form.Text = "Battleships - " + PlayingFieldController.FileName.Split('\\').Last();
                             MessageBox.Show("Playing field successfully saved!", "Save As", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                         else
@@ -125,7 +125,7 @@ namespace Battleships.Game
                     PlayingFieldController.Drawer.Use(SingleplayerPanel);
                     PlayingFieldController.Drawer.LoadGraphic();
 
-                    Form.Text = "Schiffe versenken - " + PlayingFieldController.FileName.Split('\\').Last();
+                    Form.Text = "Battleships - " + PlayingFieldController.FileName.Split('\\').Last();
                     MessageBox.Show("Playing field successfully loaded!", "Load", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
@@ -142,7 +142,7 @@ namespace Battleships.Game
                 {
                     PlayingFieldController.Close();
                     Form.Controls.Remove(SingleplayerPanel);
-                    Form.Text = "Schiffe versenken";
+                    Form.Text = "Battleships";
                 }
             }
         }
