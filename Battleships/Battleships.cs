@@ -1,19 +1,19 @@
 ﻿using System;
 using System.Windows.Forms;
-using SchiffeVersenken.Game;
+using Battleships.Game;
 
-namespace SchiffeVersenken
+namespace Battleships
 {
-    public partial class frm_SchiffeVersenken : Form
+    public partial class frm_Battleships : Form
     {
         Game.Game game = null;
 
-        public frm_SchiffeVersenken()
+        public frm_Battleships()
         {
             InitializeComponent();
         }
 
-        void frm_SchiffeVersenken_Load(object sender, EventArgs e)
+        void frm_Battleships_Load(object sender, EventArgs e)
         {
             GameStatusController.ActiveGameStatus = GameStatus.Creation;
             GameStatusController.ActivePanelStatus = PanelStatus.None;

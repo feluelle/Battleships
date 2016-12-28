@@ -36,9 +36,8 @@
     <RootNamespace>Battleships</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Battleships, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Dropbox\OSZIMT\SchiffeVersenken\Battleships\bin\Debug\Battleships.dll</HintPath>
+    <Reference Include="Battleships.Engine">
+      <HintPath>..\Battleships.Engine.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -63,17 +62,17 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs" />
     <Compile Include="Properties\Settings.Designer.cs" />
-    <Compile Include="SchiffeVersenken.cs">
+    <Compile Include="Battleships.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SchiffeVersenken.Designer.cs">
-      <DependentUpon>SchiffeVersenken.cs</DependentUpon>
+    <Compile Include="Battleships.Designer.cs">
+      <DependentUpon>Battleships.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx" />
-    <EmbeddedResource Include="SchiffeVersenken.resx">
-      <DependentUpon>SchiffeVersenken.cs</DependentUpon>
+    <EmbeddedResource Include="Battleships.resx">
+      <DependentUpon>Battleships.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />

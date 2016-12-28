@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SchiffeVersenken.Game
+namespace Battleships.Game
 {
     public interface IGame
     {

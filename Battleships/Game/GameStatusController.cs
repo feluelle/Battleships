@@ -1,4 +1,4 @@
-﻿namespace SchiffeVersenken.Game
+﻿namespace Battleships.Game
 {
     public enum GameStatus
     {

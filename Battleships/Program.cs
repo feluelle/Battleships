@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace SchiffeVersenken
+namespace Battleships
 {
     static class Program
     {
@@ -13,7 +13,7 @@ namespace SchiffeVersenken
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frm_SchiffeVersenken());
+            Application.Run(new frm_Battleships());
         }
     }
 }

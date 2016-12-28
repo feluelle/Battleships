@@ -3,11 +3,11 @@ using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 
-using Battleships.Exceptions;
-using Battleships.PlayingField;
-using Battleships.Ships;
+using Battleships.Engine.Exceptions;
+using Battleships.Engine.PlayingField;
+using Battleships.Engine.Ships;
 
-namespace SchiffeVersenken.Game
+namespace Battleships.Game
 {
     public abstract class Game : IGame
     {

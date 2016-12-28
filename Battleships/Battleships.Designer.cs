@@ -1,6 +1,6 @@
-﻿namespace SchiffeVersenken
+﻿namespace Battleships
 {
-    partial class frm_SchiffeVersenken
+    partial class frm_Battleships
     {
         /// <summary>
         /// Required designer variable.
@@ -177,7 +177,7 @@
             // 
             this.ofd_Open.Filter = "XML-File | *.xml";
             // 
-            // frm_SchiffeVersenken
+            // frm_Battleships
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -186,9 +186,9 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.ms_Menu;
             this.MaximizeBox = false;
-            this.Name = "frm_SchiffeVersenken";
-            this.Text = "Schiffe versenken";
-            this.Load += new System.EventHandler(this.frm_SchiffeVersenken_Load);
+            this.Name = "frm_Battleships";
+            this.Text = "Battleships";
+            this.Load += new System.EventHandler(this.frm_Battleships_Load);
             this.ms_Menu.ResumeLayout(false);
             this.ms_Menu.PerformLayout();
             this.ResumeLayout(false);

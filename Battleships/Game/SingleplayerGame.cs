@@ -2,11 +2,11 @@
 using System.Drawing;
 using System.Linq;
 
-using Battleships.PlayingField;
-using Battleships.Boxes;
-using Battleships.Ships;
+using Battleships.Engine.PlayingField;
+using Battleships.Engine.Boxes;
+using Battleships.Engine.Ships;
 
-namespace SchiffeVersenken.Game
+namespace Battleships.Game
 {
     class SingleplayerGame : Game, IGame
     {
